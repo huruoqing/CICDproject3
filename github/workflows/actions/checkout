@@ -1,0 +1,17 @@
+name: workflowsname
+
+on:
+  push:
+    branches:
+      - main # 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0 # 
+        persist-credentials: false # 
